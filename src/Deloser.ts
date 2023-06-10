@@ -297,8 +297,9 @@ function buildElementSelector(
     const escapeReplaceValue = "\\$1";
 
     if (element.id) {
+        const  el = element.id.toString();
         selector.push(
-            "#" + element.id.replace(escapeRegExp, escapeReplaceValue)
+            "#" + el .replace(escapeRegExp, escapeReplaceValue)
         );
     }
 
